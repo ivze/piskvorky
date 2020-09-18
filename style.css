@@ -1,0 +1,82 @@
+html {
+  background: linear-gradient(#615dad, #ffc8da);
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.profil {
+  margin: 50px;
+  width: 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: #283e50;
+  color: #bdc3c7;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.foto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.obsah {
+  padding: 30px 20px 20px 20px;
+  text-align: center;
+}
+
+.jmeno {
+  margin: 0 0 20px 0;
+  font-family: 'Lobster', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.odkazy {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.odkazy li {
+  display: inline-block;
+}
+
+.pravidla {
+  width: 100%;
+  background-color: #1fcca4;
+  border-top: 1px solid #3f464d;
+  border-bottom: 1px solid #3f464d;
+}
+
+.zacit_hrat {
+  background-color: #0197f6;
+  width: 100%;
+}
+
+.odkazy a {
+  display: block;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.odkazy a:hover {
+  color: #fff;
+}
+
+.pravidla a:hover {
+  background-color: #1cbb96;
+}
+.zacit_hrat a:hover {
+  background-color: #0090e9;
+}
