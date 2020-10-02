@@ -4,6 +4,12 @@ html {
   box-sizing: border-box;
 }
 
+/* pouzit vzdy */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
@@ -11,18 +17,21 @@ body {
 
 .profil {
   margin: 50px;
-  width: 250px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   background-color: #283e50;
   color: #bdc3c7;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.foto {
+.uvodni_foto {
   display: block;
   width: 100%;
+}
+.foto {
+  display: block;
   height: auto;
+  width: 100%;
 }
 
 .obsah {
@@ -82,13 +91,12 @@ body {
 }
 
 .top {
-    margin: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
   font-family: 'Lobster', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: normal;
   color: #fff;
   text-align: center;
-
 }
 .howToPlay {
   list-style-type: decimal;
@@ -97,18 +105,41 @@ body {
 
 .howToPlay li {
   padding: 10px;
-
 }
 
 .obrazky {
   display: flex;
   flex-wrap: wrap;
   margin: 3px 3px 3px 3px;
-  }
+}
 
-  .obrazky p {
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 20px;
-    margin: none;
+.obrazky p {
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: none;
+}
+
+.fotka_popis {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .fotka_popis {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 49.9%;
+    padding: 20px;
   }
+  .profil {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .profil {
+    max-width: 2800px;
+  }
+}
