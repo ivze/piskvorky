@@ -101,6 +101,7 @@ body {
 .howToPlay {
   list-style-type: decimal;
   align-items: left;
+  padding: 10%;
 }
 
 .howToPlay li {
