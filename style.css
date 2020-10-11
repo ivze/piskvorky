@@ -145,7 +145,7 @@ body {
 }
 
 .hra_kontejner {
-  max-width: 80vmin;
+   max-width: 80vmin;
   margin: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -159,9 +159,9 @@ filter: invert(100%);
 }
 
 .hraje_home_return {
+  width: 100%;
   display: flex;
-   justify-content: space-between;
-   width: 100%;
+ justify-content: space-between;
  padding: 5px;
  
 }
@@ -203,14 +203,11 @@ color: white;
   border: 0;
   
 }
-.home button {
-  color: transparent;
+.home {
+background-color: #1fcca4;
+}
 
-}
-.domu {
-  background-color: #1fcca4;
-}
-.domu a {
+.home a {
   display: block;
 }
 .return a {
@@ -219,8 +216,8 @@ color: white;
 .return {
   background-color: #0197f6;
 }
-.domu:hover,
-.domu:focus {
+.home:hover,
+.home:focus {
   background-color: #1cbb96;
 }
 .return:hover,
