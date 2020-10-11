@@ -39,10 +39,10 @@ body {
   text-align: center;
 }
 
-.jmeno {
+.jmeno, h1 {
   margin: 0px 0 20px 0;
   font-family: 'Lobster', sans-serif;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: normal;
   color: #fff;
   text-align: center;
@@ -143,3 +143,92 @@ body {
     max-width: 2800px;
   }
 }
+
+.hra_kontejner {
+  max-width: 80vmin;
+  margin: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.circle {
+filter: invert(100%);
+
+}
+
+.hraje_home_return {
+  display: flex;
+   justify-content: space-between;
+   width: 100%;
+ padding: 5px;
+ 
+}
+
+.hraje {
+color: white;
+
+
+}
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  width: 100%;
+}
+.field button {
+  width: 10%;
+  border: 0.5px solid darkslategrey;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.field button:focus,
+.field button:hover {
+  filter: brightness(200%);
+}
+
+.field button::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.tlacitka button {
+  margin: 5px;
+  height: 40x;
+  border-radius: 10%;
+  border: 0;
+  
+}
+.home button {
+  color: transparent;
+
+}
+.domu {
+  background-color: #1fcca4;
+}
+.domu a {
+  display: block;
+}
+.return a {
+  display: block;
+}
+.return {
+  background-color: #0197f6;
+}
+.domu:hover,
+.domu:focus {
+  background-color: #1cbb96;
+}
+.return:hover,
+.return:focus {
+  background-color: #0090e9;
+}
+
+.tlacitka {
+  display: flex;
+}
+
