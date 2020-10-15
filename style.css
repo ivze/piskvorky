@@ -38,7 +38,8 @@ body {
   text-align: center;
 }
 
-.jmeno, h1 {
+.jmeno,
+h1 {
   margin: 0px 0 20px 0;
   font-family: 'Lobster', sans-serif;
   font-size: 40px;
@@ -144,7 +145,7 @@ body {
 }
 
 .hra_kontejner {
-   max-width: 80vmin;
+  max-width: 80vmin;
   margin: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -152,21 +153,20 @@ body {
 }
 
 .circle {
-filter: invert(100%);
-
+  filter: invert(100%);
 }
 
 .hraje_home_return {
   width: 100%;
   display: flex;
- justify-content: space-between;
- padding: 5px;
- 
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .hraje {
-color: white;
-
+  color: white;
+  display: flex;
+  align-items: center;
 }
 .field {
   display: flex;
@@ -179,7 +179,6 @@ color: white;
   border: 0.5px solid darkslategrey;
   padding: 0;
   margin: 0;
-  
 }
 
 .field button:focus,
@@ -198,10 +197,9 @@ color: white;
   border-radius: 5px;
   border: 0;
   padding: 5px;
-  
 }
 .home {
-background-color: #1fcca4;
+  background-color: #1fcca4;
 }
 
 .home a {
@@ -225,4 +223,3 @@ background-color: #1fcca4;
 .tlacitka {
   display: flex;
 }
-
