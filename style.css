@@ -21,7 +21,6 @@ body {
   font-size: 24px;
   background-color: #283e50;
   color: #bdc3c7;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .uvodni_foto {
@@ -149,7 +148,6 @@ body {
   margin: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
@@ -168,7 +166,6 @@ filter: invert(100%);
 
 .hraje {
 color: white;
-
 
 }
 .field {
@@ -198,9 +195,9 @@ color: white;
 
 .tlacitka button {
   margin: 5px;
-  height: 40x;
-  border-radius: 10%;
+  border-radius: 5px;
   border: 0;
+  padding: 5px;
   
 }
 .home {
