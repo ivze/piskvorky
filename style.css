@@ -152,8 +152,9 @@ h1 {
   padding: 10px;
 }
 
-.circle {
+.hrac {
   filter: invert(100%);
+ 
 }
 .koloKrizek {
     width: 1em;
@@ -232,12 +233,18 @@ h1 {
 
 /* ii. Nastyluj políčka tak, aby nezobrazovala nic nebo kolečka a křížky podle tříd z předchozího kroku. */
 
-button.board__field--circle {
+.board__field--circle {
   background-image: url("images/circle.svg") ;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
 
 }
 
-button.board__field--cross {
+.board__field--cross {
 background-image: url("images/cross.svg") ;
-
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center center;
 }
+

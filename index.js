@@ -1,30 +1,25 @@
 'use strict';
 
-//Vytvoř si proměnnou, ve které bude uloženo kdo je na tahu. Začíná vždy kolečko, tak rovnou do proměnné přiřaď řetězec 'circle'.
-
 let praveHraje = 'circle';
 
-// Pomocí posluchače událostí po kliknutí na políčko:
+const fieldButton = document.querySelector('.fieldButton');
 
-// i. Přidej políčku příslušnout třídu podle toho, kdo je zrovna na tahu. Například board__field--circle, resp. board__field--cross.
+const game = (event) => {
+    if (praveHraje === 'circle') {
+    event.target.classList.add('board__field--circle'); // prirad tridu
+    event.target.disabled = true; // zakaz tlacitko
+    document.querySelector('.hrac').src = 'images/cross.svg'; //zmen obrazek na tride hrac
+    praveHraje = 'cross'; //hraje druhy hrac
 
-const addClass = (event) => {
-  event.target.classList.add('board__field--circle');
-  event.target.classList.add('board__field--cross');
+  } else if (praveHraje === 'cross') {
+    event.target.classList.add('board__field--cross');
+    event.target.disabled = true;
+    document.querySelector('.hrac').src = 'images/circle.svg';
+    praveHraje = 'circle';
+  }
 };
 
-document.querySelector('button').addEventListener('click', addClass);
-
-fieldElement.addEventListener('click', () => {
-  addSymbol(praveHraje);
-  togglePlayer(praveHraje);
-});
-
-// Změň hodnotu proměnné z 'circle' na 'cross', případně z 'cross' na 'circle'.
-
-document.querySelector('circle').classList.toggle('cross');
-document.querySelector('cross').classList.toggle('circle');
-
-// Uprav v levém horním rohu výpis, kdo je na tahu.
-
-document.querySelector('.hraje').classList.toggle('circle');
+const field = document.querySelectorAll('.fieldButton'); //vyber tlacitko do promenne field
+for (let i = 0; i < field.length; i++) { //cyklus
+  field[i].addEventListener('click', game); // na kliknuti zavolej f-ci game
+}
