@@ -13,6 +13,7 @@ html {
 body {
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .profil {
@@ -145,7 +146,7 @@ h1 {
 }
 
 .hra_kontejner {
-  max-width: 80vmin;
+  width: 80vmin;
   margin: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -154,13 +155,11 @@ h1 {
 
 .hrac {
   filter: invert(100%);
- 
 }
 .koloKrizek {
-    width: 1em;
-    height: 1em;
-    filter: invert(100%);
-
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
 }
 .hraje_home_return {
   width: 100%;
@@ -230,21 +229,18 @@ h1 {
   display: flex;
 }
 
-
 /* ii. Nastyluj políčka tak, aby nezobrazovala nic nebo kolečka a křížky podle tříd z předchozího kroku. */
 
 .board__field--circle {
-  background-image: url("images/circle.svg") ;
+  background-image: url('images/circle.svg');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 .board__field--cross {
-background-image: url("images/cross.svg") ;
-background-size: 80%;
-background-repeat: no-repeat;
-background-position: center center;
+  background-image: url('images/cross.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
