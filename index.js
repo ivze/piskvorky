@@ -109,12 +109,16 @@ const isWinningMove = (field) => {
 //Funkci isWinningMove pusť s každým nově přidaným symbolem.
 
 for (let i = 0; i < field.length; i++) {
-  field[i].addEventListener('click', isWinningMove);
+  field[i].addEventListener('click', (event) => {
+    const isWinner = isWinningMove(event.target);
+
+    
+  });
 }
 
 //Pokud vrátí true, zobraz alert s hláškou, který hráč vyhrál.
 
-const vyhra = (e) => {
+const vyhra = (event) => {
   if (isWinningMove === true) {
     alert('vyhral krizek');
   } else {
